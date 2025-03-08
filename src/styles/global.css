@@ -2,6 +2,7 @@
     --background: #FFF;
     --background-t: #FFFFFF99;
     --text-color: #222;
+    --text-faded: #777;
     --border: #AAA;
 	--accent: #2337ff;
 	--accent-dark: #000d8a;
@@ -20,6 +21,7 @@
         --background: #000;
         --background-t: #00000099;
         --text-color: #DDD;
+        --text-faded: #888;
     }
 }
 
@@ -42,11 +44,10 @@ body {
 	margin: 0;
 	padding: 0;
 	text-align: left;
-	background: linear-gradient(var(--gray-gradient)) no-repeat;
-	background-size: 100% 600px;
+    background: var(--background);
+    color: var(--text-color);
 	word-wrap: break-word;
 	overflow-wrap: break-word;
-	color: rgb(var(--gray-dark));
 	font-size: 20px;
 	line-height: 1.7;
 }
