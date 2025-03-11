@@ -22,18 +22,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
                 width: 100%;
                 position: relative:
             }
-            .hero-image {
-                width: 100%;
-                max-width: 90vw;
-            }
             .hero-image .clear {
                 z-index: 1;
                 position: absolute;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 90%;
             }
             .hero-image img {
 				display: block;
 				margin: 0 auto;
-				border-radius: 12px;
+                border-radius: 12px;
             }
             .hero-image .blur {
                 z-index: 0;
